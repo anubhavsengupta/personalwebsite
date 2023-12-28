@@ -2,7 +2,7 @@
     width: 100%;
     align-items: center;
     font-family: "Arial", sans-serif;
-    color: #3e497a;
+    color: #5b74e5;
   }
   
   .about {
@@ -17,6 +17,17 @@
     color: #f0f0f0;
   }
   
+.mydesc {
+  
+  display: flex;
+  padding-bottom: 60px;
+  
+}
+
+.mydesc h2 {
+  margin: "0 10px" 
+}
+
   .about h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 80px;

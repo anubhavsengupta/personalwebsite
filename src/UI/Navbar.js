@@ -9,14 +9,25 @@ function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
   // notifies local user location.
   const location = useLocation();
-
+  const [isSticky, setSticky] = useState(false);
+  
   useEffect(() => { 
     setExpandNavbar(false);
     
 
   }, [location]);
+
+  useEffect(() => {
+    // Check if the current location is on the "Experiences" tab
+    if (location.pathname === '/experience') {
+      setSticky(false); // Unstick the navbar
+    } else {
+      setSticky(true); // Stick the navbar for other tabs
+    }
+  }, [location]);
+
   return (
-    <div className="navbar" id={expandNavbar ? "open" : "close"}>  
+    <div id={expandNavbar ? "open" : "close"} className={isSticky ? "navbar sticky" : "navbar"}>  
       <div className="toggleButton">
         
         <button onClick={() => {
