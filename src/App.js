@@ -6,6 +6,8 @@ import Projects from './Components/Projects';
 import Navbar from './UI/Navbar';
 import Footer from './UI/Footer';
 import ProjectDisplay from './Components/ProjectDisplay';
+
+
 function App() {
   return (
     <div className="App">

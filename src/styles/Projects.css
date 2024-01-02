@@ -1,27 +1,25 @@
-.projects {
+.myprojects {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: aliceblue;
   }
-  .projects .projectTitle {
-    text-align: center;
-    color: #3e497a;
-    font-size: 60px;
-    font-weight: bolder;
-  }
+ 
   
-  .projectList {
-    width: 70vw;
+  .list {
+    width: 75vw;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
   }
   
-  /* MENU ITEM STYLING */
+  /* CARD ITEM */
   
   .projectItem {
     border-radius: 15px;
@@ -30,16 +28,19 @@
     margin: 40px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    transition: transform 0.3s ease-in;
+    background: linear-gradient(#df8888, #b1b7fa);
   }
   .projectItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5);
+    
     cursor: pointer;
+    transform: translateY(-10px);
   }
   
   .projectItem .bgImage {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
     width: 100%;
     height: 200px;
     background-position: center;
@@ -48,7 +49,7 @@
   }
   
   .projectItem h1 {
-    font-size: 25px;
+    font-size: 5rem;
   }
   
   @media only screen and (max-width: 1300px) {

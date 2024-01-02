@@ -2,9 +2,12 @@
     width: 100%;
     align-items: center;
     font-family: "Arial", sans-serif;
-    color: #5b74e5;
+    color: rgb(0, 31, 63);
   }
   
+
+
+
   .about {
     width: 100%;
     height: calc(100vh - 100px);
@@ -13,9 +16,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #21325e;
     color: #f0f0f0;
+    background-image: url('../assets/bluebg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+.desc span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#058290, #04239f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
   
 .mydesc {
   
@@ -31,7 +46,7 @@
   .about h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 80px;
-    color: #e9d35b;
+    color: rgb(0, 44, 87);
     height: 50px;
   }
   
@@ -45,28 +60,55 @@
     color: white;
   }
   
-  .skills {
-    font-size: 35px;
-    width: 100%;
+  .aboutme {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
   }
   
+  .photo {
+    flex: 1;
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Optional: Apply a border-radius for a circular image */
+  }
+  
+  .skills {
+    flex: 1;
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
   .skills h1 {
-    color: #3e497a;
+    color: #3e497a; /* Adjust the color as needed */
   }
   
-  .skills .list {
+  .skills ol {
     list-style: none;
-    width: 60%;
+    padding: 0;
   }
   
-  .list span {
-    font-size: 20px;
+  .skills .item {
+    margin-bottom: 20px; /* Adjust the margin as needed */
   }
   
+  @media only screen and (max-width: 600px) {
+    .aboutme {
+      flex-direction: column;
+    }
+  
+    .photo,
+    .skills {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+
+
   @media only screen and (max-width: 600px) {
     .about h2 {
       font-size: 40px;
@@ -88,4 +130,19 @@
     .skills h2 {
       font-size: 30px;
     }
+  }
+
+
+
+  .about.visible .mydesc h2,
+  .about.visible .desc span,
+  .skills.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .about .mydesc h2,
+  .about .desc span,
+  .skills {
+    opacity: 0;
   }
