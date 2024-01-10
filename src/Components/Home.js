@@ -2,12 +2,12 @@ import React from 'react'
 import "../styles/Home.css";
 import {motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from'react';
-
+import personalimg from '../assets/myphoto.jpg';
 
 
 
 function Home() {
-  const text = "A student with a passion for software development and learning!".split(" ");
+  const text = "A student with a passion for software development and learning!";
   const desc = "Hi! My name is Akki!".split(" ");
   
   const [isVisible, setIsVisible] = useState(false);
@@ -53,20 +53,7 @@ function Home() {
        </AnimatePresence> 
 
         <div className="desc">
-          {text.map((el, i) => (
-          <motion.span
-            
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.75,
-              delay: i / 10
-            }}
-            key={i}
-          >
-            {el}{" "}
-          </motion.span>
-        ))}
+          <p>{text}</p>
         </div>
 
 
@@ -74,7 +61,7 @@ function Home() {
       <div className="aboutme">
 
         <div className="photo">
-            <img src="https://avatars.githubusercontent.com/u/10000000" alt="me"></img>
+            <img id ="personal" src={personalimg} alt="me"></img>
         </div>
         <div className={`skills ${isVisible ? 'visible' : ''}`}>
           <h1>About me</h1>
@@ -98,6 +85,11 @@ function Home() {
               <span>ReactJS MongoDB Selenium BeautifulSoup Flask Bootstrap </span>
             </li>
           </ol>
+
+          <div className="ProjectButton">
+            <button>Projects</button>
+            <button>Experience</button>
+            </div>
         </div>
       </div>
     </div>

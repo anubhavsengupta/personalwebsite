@@ -12,40 +12,41 @@ function Experience() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
+          contentStyle={{ background: 'rgb(255, 255, 255)', color: '#000000' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(0, 0, 0)' }}
+          date="Jun 2022  - Aug 2022"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title">CAA</h3>
+          <h4 className="vertical-timeline-element-subtitle">Membership Support Intern</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+            Directly responsible for customer calls and processed large-scale transactions ranging from $100 to
+            $1000
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
+          date="Mar 2022 - Jun 2022"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+          <h3 className="vertical-timeline-element-title">Dairy Queen</h3>
+          <h4 className="vertical-timeline-element-subtitle">Crew Member</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+            Managed and processed customer orders.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
+          date="Nov 2021 - Dec 2022"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+          <h3 className="vertical-timeline-element-title">Kurius</h3>
+          <h4 className="vertical-timeline-element-subtitle">Partnerships Coordinator</h4>
           <p>
-            User Experience, Visual Design
+            Raised sponsors and over $6000 in prize money for KuriusHacks CE.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

@@ -8,141 +8,207 @@
 
 
 
-  .about {
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #f0f0f0;
-    background-image: url('../assets/bluebg.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.about {
+  width: 100%;
+  height: 56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f0f0f0;
+  background-image: url('../assets/spacebg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.desc span {
-  font-size: 0.9rem;
+.desc p {
+  font-size: 1.4rem;
   font-weight: bold;
-  background: -webkit-linear-gradient(#058290, #04239f);
+  background: -webkit-linear-gradient(#abecf3, #c3cfff);
+  padding-top: 4rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+  
 }
   
 .mydesc {
   
   display: flex;
   padding-bottom: 60px;
-  
 }
 
 .mydesc h2 {
-  margin: "0 10px" 
+  margin: "0 10px"; 
+  padding-bottom: 1rem;
 }
 
-  .about h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
-    color: rgb(0, 44, 87);
-    height: 50px;
-  }
+.about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: rgb(8, 35, 62);
+  height: 50px;
+}
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: white;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  flex: 1;
   
+}
+
+.photo img {
+  width: 100%;
+}
+
+.photo {
+  background-color: rgb(0, 31, 63);
+}
+
+.skills {
+  flex: 1;
+  text-align: center;
+  padding: 20px; 
+  margin: auto;
+}
+
+.skills p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.skills h1 {
+  color: #3e497a; 
+}
+
+.skills ol {
+  list-style: none;
+  padding: 0;
+}
+
+.skills .item {
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  margin: auto;
+}
+
+.desc {
+
+}
+
+/* @media only screen and (max-width: 600px) {
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .photo,
+  .skills {
+    flex: none;
+    width: 100%;
+    
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
   .about .prompt {
-    width: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
     font-size: 30px;
   }
-  .prompt svg {
-    font-size: 60px;
-    margin: 5px;
-    color: white;
+} */
+
+
+
+.about.visible .mydesc h2,
+.about.visible .desc span,
+.skills.visible {
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.about .mydesc h2,
+.about .desc span,
+.skills {
+  opacity: 0;
+}
+
+
+  /* Add  media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
-  
+
   .aboutme {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
+    min-width: 0;
   }
-  
-  .photo {
-    flex: 1;
-    padding: 20px; /* Adjust the padding as needed */
+  .desc, .mydesc {
+     flex-wrap: wrap;
+     justify-content: center;
+     overflow: hidden;
+     text-align: center;
+     margin: auto;
   }
+
   
-  .photo img {
+
+  .about,
+  .aboutme {
     width: 100%;
-    height: auto;
-    border-radius: 50%; /* Optional: Apply a border-radius for a circular image */
+    
   }
-  
-  .skills {
-    flex: 1;
-    padding: 20px; /* Adjust the padding as needed */
-  }
-  
-  .skills h1 {
-    color: #3e497a; /* Adjust the color as needed */
-  }
-  
-  .skills ol {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skills .item {
-    margin-bottom: 20px; /* Adjust the margin as needed */
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .aboutme {
-      flex-direction: column;
-    }
-  
-    .photo,
-    .skills {
-      flex: none;
-      width: 100%;
-    }
+  #personal {
+    height: 100%;
   }
 
-
-
-  @media only screen and (max-width: 600px) {
-    .about h2 {
-      font-size: 40px;
-    }
-  
-    .about .prompt {
-      margin-top: 10px;
-      font-size: 20px;
-      width: 80%;
-    }
-  
-    .skills {
-      text-align: center;
-    }
-    .list {
-      padding: 0;
-    }
-  
-    .skills h2 {
-      font-size: 30px;
-    }
+  .about h2 {
+    padding-bottom: 30px;
+    margin: auto;
   }
 
-
-
-  .about.visible .mydesc h2,
-  .about.visible .desc span,
-  .skills.visible {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+  .desc span {
+    margin: auto;
   }
+
   
-  .about .mydesc h2,
-  .about .desc span,
-  .skills {
-    opacity: 0;
-  }
+
+}

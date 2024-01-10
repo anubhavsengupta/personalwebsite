@@ -12,7 +12,6 @@ function Projects() {
       <h1>My Personal Projects</h1>
       <div className="list">
         {projectList.map((project, idx) => {
-          console.log(project);
             return <ProjectItem image={project.image} name={project.name} id={idx}/>
           })}
 
