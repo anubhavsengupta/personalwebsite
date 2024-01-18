@@ -51,29 +51,31 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
+          date="Jun 2021 - Aug 2021"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+          <h3 className="vertical-timeline-element-title">e2youngengineers</h3>
+          <h4 className="vertical-timeline-element-subtitle">STEM Instructor</h4>
           <p>
-            User Experience, Visual Design
+          Prepared and served a variety of lessons with precision and creativity to over 25 students, consistently
+meeting and exceeding quality standards.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
+          date="2019 - 2023"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           
         >
-          <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+          <h3 className="vertical-timeline-element-title">Robotics Programming Team Lead</h3>
+          <h4 className="vertical-timeline-element-subtitle">Bishop Reding Catholic Secondary School</h4>
           <p>
-            Strategy, Social Media
+            Led school robotics team in programming. Developed image recogntion models using openCV
+            and taught C to students.
           </p>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="November 2012"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
@@ -100,7 +102,7 @@ function Experience() {
         <VerticalTimelineElement
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
         
-        />
+        /> */}
       </VerticalTimeline>
     </div>
   )

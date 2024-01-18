@@ -33,6 +33,7 @@ a {
   overflow: hidden;
   position: relative;
   display: inline-block;
+  text-decoration: none;
 }
 
 a::before,

@@ -3,11 +3,11 @@ import "../styles/Home.css";
 import {motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from'react';
 import personalimg from '../assets/myphoto.jpg';
-
+import {Link} from 'react-router-dom';
 
 
 function Home() {
-  const text = "A student with a passion for software development and learning!";
+
   const desc = "Hi! My name is Akki!".split(" ");
   
   const [isVisible, setIsVisible] = useState(false);
@@ -53,7 +53,7 @@ function Home() {
        </AnimatePresence> 
 
         <div className="desc">
-          <p>{text}</p>
+          <p>A student with a passion for software development and learning!</p>
         </div>
 
 
@@ -87,8 +87,10 @@ function Home() {
           </ol>
 
           <div className="ProjectButton">
-            <button>Projects</button>
-            <button>Experience</button>
+            <button class="secondaryNavigation"><Link to="/projects">Projects </Link></button>
+            </div>
+            <div className="ProjectButton">
+            <button class="secondaryNavigation"><Link to="/experience">Experience </Link></button>
             </div>
         </div>
       </div>

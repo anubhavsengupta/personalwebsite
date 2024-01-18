@@ -5,7 +5,7 @@ function Footer() {
     <div className="footer">
       <footer>
         <div class="footer_container">
-          <div class="logo"> <p>DRAGON NETWORK </p></div>
+          <div class="logo"> <p>. </p></div>
             <div class="social_media">
               
               <a href="/#"><i class="fab fa-github"></i></a>

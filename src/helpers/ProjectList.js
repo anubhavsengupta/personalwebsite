@@ -1,6 +1,6 @@
 import img1 from '../assets/problemtracker.png'
 import img2 from '../assets/journal.png'
-import img3 from '../assets/site.webp'
+import img3 from '../assets/site.png'
 export const projectList = [
     {
         name: "Problem Tracker",

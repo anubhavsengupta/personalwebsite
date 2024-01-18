@@ -26,6 +26,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
+  
 }
 
 .logo{
@@ -46,8 +47,10 @@ footer{
 }
 
 .social_media a:hover{
-  color: gold;
+  color: lightblue;
 }
+
+
 h1{
   font-size: 40px;
   color: #fff;
