@@ -33,6 +33,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  overflow: none;
   
 }
   
@@ -272,4 +273,14 @@ a {
 
 a:hover {
   color: #fff;
+}
+
+@media(max-width: 500) {
+  .desc, .mydesc {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+ }
 }
