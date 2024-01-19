@@ -12,10 +12,15 @@ function ProjectDisplay() {
 
       
       <div className="project">
-        <h1>{project.name}</h1>
-        <img src={project.image} alt="Project"/>
-        <p><b>Skills</b> {project.skills}</p>
-        <p><a href="https://github.com/anubhavsengupta/">Github</a></p>
+        <div className="s1">
+          <h1>{project.name}</h1>
+          <img src={project.image} alt="Project"/>
+        </div>
+
+        <div className="s2">
+          <p><b>Skills</b> {project.skills}</p>
+          <p><a href="https://github.com/anubhavsengupta/">Github</a></p>
+        </div>
       </div>
     </Animation1>
     )

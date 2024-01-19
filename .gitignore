@@ -7,7 +7,8 @@
 
 # testing
 /coverage
-/src/assets
+/src/assets/personalphoto.png
+/src/assets/myphoto.png
 # production
 /build
 

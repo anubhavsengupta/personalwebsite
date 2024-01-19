@@ -72,7 +72,7 @@ function Home() {
           <ol>
             <li className="item">
               <h2>Tools</h2>
-              <span>Docker Git NPM Android Studio</span>
+              <span>Postman Git NPM Android Studio</span>
             </li>
 
             <li className="item">
@@ -82,7 +82,7 @@ function Home() {
 
             <li className="item">
               <h2>Frameworks</h2>
-              <span>ReactJS MongoDB Selenium BeautifulSoup Flask Bootstrap </span>
+              <span>ReactJS MongoDB Selenium Flask Bootstrap Express.JS Node.JS</span>
             </li>
           </ol>
 
