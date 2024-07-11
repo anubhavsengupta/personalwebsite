@@ -1,6 +1,5 @@
 import React from 'react'
 import CardItem from './CardItem'
-
 function Toolcard({ list }) {
     
       return (
