@@ -19,7 +19,7 @@ const SlideTabs = () => {
     return (
         <ul className="relative flex w-fit rounded-full border-2 border-orange-200 bg-white p-1">
             <Tab setPosition={setPos}><a href="#about">Home</a></Tab>
-            <Tab setPosition={setPos}>Projects</Tab>
+            <Tab setPosition={setPos}><a href="#projects">Projects</a></Tab>
             <Tab setPosition={setPos}>Experience</Tab>
             <UserCursor position={pos}></UserCursor>
         </ul> 
