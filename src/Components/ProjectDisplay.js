@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
 import {projectList} from '../helpers/ProjectList'
-import '../styles/ProjectDisplay.css'
 import Animation1 from '../helpers/Animation1';
 
 function ProjectDisplay() {

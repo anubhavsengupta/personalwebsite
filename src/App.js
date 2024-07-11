@@ -1,10 +1,11 @@
-import './App.css';
+
+import './index.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Components/Home';
 import  Experience from './Components/Experience';
 import Projects from './Components/Projects';
-import Navbar from './UI/Navbar';
-import Footer from './UI/Footer';
+import Navbar from './Components/UI/Navbar';
+import Footer from './Components/UI/Footer';
 import ProjectDisplay from './Components/ProjectDisplay';
 
 
@@ -21,7 +22,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
 
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );
