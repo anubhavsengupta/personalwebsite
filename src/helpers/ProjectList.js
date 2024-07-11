@@ -1,6 +1,7 @@
 import img1 from '../assets/problemtracker.png'
 import img2 from '../assets/journal.png'
 import img3 from '../assets/site.png'
+import img4 from '../assets/profit.png'
 export const projectList = [
     {
         name: "Problem Tracker",
@@ -16,5 +17,10 @@ export const projectList = [
         name: "Personal site",
         image: img3,
         skills: "React Router HTML CSS JS"
+    },
+    {
+        name: "Cash Talker",
+        image: img4,
+        skills: "React TailwindCSS Cohere API"
     }
 ]

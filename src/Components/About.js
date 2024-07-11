@@ -8,7 +8,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 function About() {
 
     return (
-        <div className="about flex flex-col md:flex-row justify-between items-center mx-4 md:mx-12 mt-12">
+        <div className="about flex flex-col md:flex-row justify-between items-baseline mx-4 md:mx-12 mt-12 md:mt-32">
             <div className="flex flex-col justify-center items-center mr-4 flex-1">
                 <h1 className="font-raleway text-7xl text-center">Hi, my name is Akki.</h1>
 
