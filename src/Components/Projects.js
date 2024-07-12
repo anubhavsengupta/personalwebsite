@@ -11,7 +11,7 @@ function Projects() {
       
       <div className="flex flex-wrap justify-center gap-8 p-4" id="projects">
         {projectList.map((project, idx) => {
-            return <ProjectItem image={project.image} name={project.name} id={idx}/>
+            return <ProjectItem image={project.image} name={project.name} id={idx} link={project.link}/>
           })}
 
       </div>

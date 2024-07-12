@@ -6,21 +6,25 @@ export const projectList = [
     {
         name: "Problem Tracker",
         image: img1,
-        skills: "ReactJS HTML CSS JS"
+        skills: "ReactJS HTML CSS JS",
+        link: "https://github.com/anubhavsengupta/ProblemTracker"
     },
     {
         name: "Mental Journal",
         image: img2,
-        skills: "Flask MySQL Python JS HTML CSS"
+        skills: "Flask MySQL Python JS HTML CSS",
+        link: "https://github.com/anubhavsengupta/MentalJournal"
     },
     {
         name: "Personal site",
         image: img3,
-        skills: "React Router HTML CSS JS"
+        skills: "React Router HTML CSS JS",
+        link: "https://github.com/anubhavsengupta/personalwebsite"
     },
     {
         name: "Cash Talker",
         image: img4,
-        skills: "React TailwindCSS Cohere API"
+        skills: "React TailwindCSS Cohere API",
+        link: "https://github.com/anubhavsengupta/cashtalker"
     }
 ]

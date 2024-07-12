@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react' 
 import { motion } from 'framer-motion'
 import Tab from './Tab'
+import { Link } from 'react-router-dom';
 function SlideTab() {
   return (
     <div className="grid place-content-center">
@@ -18,9 +19,9 @@ const SlideTabs = () => {
     })
     return (
         <ul className="relative flex w-fit rounded-full border-2 border-orange-200 bg-white p-1">
-            <Tab setPosition={setPos}><a href="#about">Home</a></Tab>
-            <Tab setPosition={setPos}><a href="#projects">Projects</a></Tab>
-            <Tab setPosition={setPos}>Experience</Tab>
+            <Tab setPosition={setPos}> <Link to="/">Home</Link></Tab>
+            <Tab setPosition={setPos}><Link to="/#projects">Projects</Link></Tab>
+            <Tab setPosition={setPos}><a href="/#experience">Experience</a></Tab>
             <UserCursor position={pos}></UserCursor>
         </ul> 
     )

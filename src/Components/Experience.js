@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 function Experience() {
   return (
-    <div>
+    <div id="experience">
       <h1 className="text-4xl font-semibold text-gradient text-center pt-24">
         Experience
       </h1>

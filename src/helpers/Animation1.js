@@ -10,7 +10,7 @@ function Animation1({children}) {
   return (
     <motion.div variants={animationData} initial="initial"
     animate="animate" exit="exit"
-    transition={{duration: 0.75}}>
+    transition={{duration: 1}}>
         {children}
     </motion.div>
   )
