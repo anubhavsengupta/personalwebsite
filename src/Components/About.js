@@ -31,8 +31,8 @@ function About() {
                     <h1 className="font-raleway text-6xl mb-4">About Me</h1>
                     <p className="text-lg">
                         I am a second-year Computer Science student at the University of Waterloo, and am currently
-                        seeking 2025 Winter internship opportunities. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec accumsan viverra lacinia. Integer eleifend dapibus metus in efficitur. Vivamus vulputate leo metus, a imperdiet tortor laoreet a. Ut quis dui mi. Suspendisse ac dolor ex. In hac habitasse platea dictumst. Duis accumsan justo eget cursus dignissim.
+                        seeking 2025 Winter internship opportunities. My hobbies include playing basketball, an avid chess player (1500) on chess.com and learning new things. Currently, I am a software development intern at TTC where I am developing internal tools
+                        for over 5000+ users. 
                     </p>
                 </div>
         </div>

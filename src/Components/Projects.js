@@ -6,7 +6,7 @@ function Projects() {
   return (
     <Animation1>
 
-    <h1 className="text-center font-raleway text-4xl pt-12 md:pt-40">My Personal Projects</h1>
+    <h1 className="text-center font-raleway text-4xl pt-12 md:pt-40" id="projects">My Personal Projects</h1>
     <div>
       
       <div className="flex flex-wrap justify-center gap-8 p-4" id="projects">
